@@ -1,9 +1,9 @@
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
 $sans: "Helvetica Neue", Arial, sans-serif !default;
 $serif: Georgia, Times, "Times New Roman", serif !default;
-$code-border-radius: 0px;
+$code-border-radius: 5px;
 $code-font-size: 80%;
-$display-line-numbers: false;
+$display-line-numbers: true;
 
 .highlight, html .gist .gist-file .gist-syntax .gist-highlight {
   table { border-spacing: 0px; }
@@ -95,7 +95,6 @@ pre {
   margin-bottom: 2.1em;
   padding: .8em 1em;
   color: $pre-color;
-  overflow: auto;
 }
 h3.filename {
   @extend .code-title;

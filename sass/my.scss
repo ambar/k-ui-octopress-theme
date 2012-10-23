@@ -1,0 +1,77 @@
+$text-color-light: #aaa !default;
+
+body {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+#content a {
+  color: sienna;
+}
+#content a:visited {
+  color: #b33;
+}
+
+p.meta {
+    text-align: right;
+    overflow: hidden;
+}
+p.meta .left {
+  float: left;
+}
+
+figure.code {
+  margin: 0;
+}
+
+blockquote {
+  $bq-margin: 1.2em;
+  margin: 1em 0;
+  font-style: italic;
+  position: relative;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding-left: 1em;
+  border-left: 4px solid rgba($text-color-light, .5);
+  cite {
+    font-style: italic;
+    a { color: $text-color-light !important; word-wrap: break-word; }
+    &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: $text-color-light; }
+  }
+  @media only screen and (min-width: 992px) {
+    padding-left: 1.5em;
+    border-left-width: 4px;
+  }
+}
+
+.svg-link {
+  position: relative;
+  top: -3px;
+  margin-top: 9px;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 35px;
+  background-color: #bbb;
+  text-align: center;
+  vertical-align: bottom;
+}
+.svg-link:hover {
+  background-color: #99f;
+}
+.svg-link.weibo:hover {
+  background-color: #992;
+}
+.svg-link a {
+  display: block; 
+}
+.svg-link img {
+  position: absolute;
+  top: 3px; left: 2px;
+  cursor: pointer;
+}
+.svg-link.weibo img {
+  top: 8px; left: 6px;
+}
+
+#sn li{ display: inline; }

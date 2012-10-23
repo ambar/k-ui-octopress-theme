@@ -1,19 +1,31 @@
 /* -*- mode:css coding:utf-8 -*- */
 
 $max-width: 900px;
-$base-font-color: #444;
+$base-font-color: #333;
 
 #comments { display: none; }
 body {
   font-family: "Hiragino Mincho ProN", Georgia, Times, "Times New Roman", serif, "IPA明朝";
   font-size: 1.0em;
   color: #{$base-font-color};
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-h2, h3, h4, h5, h6 {
+html[lang=ja] h2,
+html[lang=ja] h3,
+html[lang=ja] h4,
+html[lang=ja] h5,
+html[lang=ja] h6  {
   font-family: "Hiragino Kaku Gothic Pro W3", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", "MS P Gothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+html[lang="cn"] h2,
+html[lang="cn"] h3,
+html[lang="cn"] h4,
+html[lang="cn"] h5,
+html[lang="cn"] h6 {
+  font-family: '黑体';
 }
 
 .site_metas {
