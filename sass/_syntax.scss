@@ -117,14 +117,15 @@ p, li {
   pre code { font-size: 100% !important; background: none; border: none; }
 }
 
+pre > code {
+  font-family: $mono;
+}
 .pre-code {
   @include selection(adjust-color($base03, $lightness: 23%, $saturation: -65%), $text-shadow: $base03 0 1px);
   font-family: $mono !important;
-  overflow: scroll;
-  overflow-y: hidden;
   display: block;
   padding: .8em !important;
-  overflow-x: auto;
+  @if not $display-line-numbers { overflow-y: hidden;overflow-x: auto; }
   line-height: 145%;
   background-color: $base03 !important;
   color: $base1 !important;
