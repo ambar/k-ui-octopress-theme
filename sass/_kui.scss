@@ -71,6 +71,7 @@ header[role="banner"] {
   position: absolute;
   @media screen and (max-width: 600px) {
     position: static;
+    margin-top: 1em;
   }
   > ul {
     padding: 0px;
@@ -113,6 +114,11 @@ header[role="banner"] {
 }
 /* /social-links */
 
+#wrapper {
+  @media screen and (max-width: 600px) {
+    padding: .5em;
+  }
+}
 #content{
   margin: 8px auto;
   max-width: #{$max-width};
@@ -133,12 +139,12 @@ header[role="banner"] {
     font-style: italic;
   }
 }
-.entry > header{
-  margin: 50px 0px;
+
+.entry > header {
+  margin: 1em 0;
 }
 
-
-p.meta{
+p.meta {
   text-align: right;
 }
 
