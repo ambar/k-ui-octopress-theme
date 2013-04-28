@@ -24,6 +24,14 @@ figure.code {
   margin: 0;
 }
 
+body .gist {
+  font-size: 13px;
+}
+
+.gist table.highlight {
+  width: 100%;
+}
+
 blockquote {
   $bq-margin: 1.2em;
   margin: 1em 0;
