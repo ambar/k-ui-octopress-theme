@@ -73,6 +73,7 @@ header[role="banner"] {
     position: static;
     margin-top: 1em;
   }
+
   > ul {
     padding: 0px;
     margin: 0px;
@@ -83,35 +84,23 @@ header[role="banner"] {
       overflow: hidden;
     }
   }
-}
-@mixin social-links-base($img){
-  @include mask-image('socialis/glyph/'+$img+'.png');
-}
-.maskImage{
-  #social-links > ul > li > a {
-    background-color: #999;
-    display: block;
-    text-indent: -999999em;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    padding: 0px;
-  }
 
-  @each $name in github, twitter, tumblr, feed {
-    #social-links-#{$name} {
-      > a {
-        @include social-links-base(#{$name});
-        &:hover {
-          @if $name == twitter { background-color: #39c; }
-          @else if $name == tumblr { background-color: #357; }
-          @else if $name == feed { background-color:#e93; }
-          @else { background-color: #ccc; }
-        }
-      }
-    }
+  a {
+    color: #999;
+    display: block;
+    font-size: 1.5em;
+    background-color: initial;
+
+    &:hover { color: #ccc; }
+    &.googleplus:hover { color: rgb(220,75,57); }
+    &.weibo:hover { color: rgb(234,27,46); }
+    &.github:hover { color: #4183C4; }
+    &.twitter:hover { color: #39c; }
+    &.tumblr:hover { color: #357; }
+    &.feed:hover { color: #e93; }
   }
 }
+
 /* /social-links */
 
 #wrapper {
@@ -119,6 +108,7 @@ header[role="banner"] {
     padding: .5em;
   }
 }
+
 #content{
   margin: 8px auto;
   max-width: #{$max-width};

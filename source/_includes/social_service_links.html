@@ -2,36 +2,44 @@
 <div id="social-links">
   <ul>
     {% if site.googleplus_user %}
-    <li id="social-links-github">
-      <a title="plus" href="http://plus.google.com/u/0/{{ site.googleplus_user }}">plus</a>
+    <li>
+      <a class="googleplus" title="google plus" href="http://plus.google.com/+{{ site.googleplus_user }}">
+        <i class="icon-gplus"></i>
+      </a>
     </li>
     {% endif %}
     {% if site.twitter_user %}
-    <li id="social-links-twitter">
-      <a title="twitter" href="http://twitter.com/{{ site.twitter_user }}">twitter</a>
+    <li>
+      <a class="twitter" title="twitter" href="http://twitter.com/{{ site.twitter_user }}">
+        <i class="icon-twitter"></i>
+      </a>
     </li>
     {% endif %}
     {% if site.tumblr_user %}
-    <li id="social-links-tumblr">
-      <a title="tumblr" href="http://{{ site.tumblr_user }}.tumblr.com/">tumblr</a>
+    <li>
+      <a class="tumblr" title="tumblr" href="http://{{ site.tumblr_user }}.tumblr.com/">
+        <i class="icon-tumblr"></i>
+      </a>
     </li>
     {% endif %}
     {% if site.github_user %}
-    <li class="svg-link">
-      <a href="https://github.com/{{ site.github_user }}">
-        <img src="/images/socialis/glyph/github.svg" title="github" class="github">
+    <li>
+      <a class="github" title="github" href="https://github.com/{{ site.github_user }}">
+        <i class="icon-github"></i>
       </a>
     </li>
     {% endif %}
     {% if site.weibo_user %}
-    <li class="svg-link weibo">
-      <a href="http://weibo.com/{{ site.weibo_user }}">
-        <img src="/images/socialis/glyph/weibo.svg" title="weibo">
+    <li>
+      <a class="weibo" href="http://weibo.com/{{ site.weibo_user }}">
+        <i class="icon-weibo"></i>
       </a>
     </li>
     {% endif %}
-    <li id="social-links-feed">
-      <a title="feed" href="/atom.xml">feed</a>
+    <li>
+      <a class="feed" title="feed" href="/atom.xml">
+        <i class="icon-rss"></i>
+      </a>
     </li>
   </ul>
 </div>
