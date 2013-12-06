@@ -1,5 +1,9 @@
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
+
 .mono { font-family: $mono; }
+.sans { font-family: $sans; }
+
 $noise-bg: image-url('noise.png') top left !default;
 // Main Link Colors
 $link-color: lighten(#165b94, 3) !default;
@@ -73,6 +77,7 @@ html .gist .gist-file {
    padding: .6em 0.8em;
    border: 1px solid lighten($base02, 2) !important;
    color: $base01;
+   text-shadow: none;
    font-size: .7em !important;
    @if $solarized == light {
      background: lighten($base03, 2) $noise-bg;
@@ -234,7 +239,7 @@ pre, .highlight, .gist-highlight {
   &::-webkit-scrollbar-thumb:horizontal { background: $solar-scroll-thumb;  -webkit-border-radius: 4px; border-radius: 4px }
 }
 
-.highlight code { 
+.highlight code {
   @extend .pre-code; background: #000;
   font-size: $code-font-size;
 }
